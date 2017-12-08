@@ -1,0 +1,8 @@
+.*
+*~
+Pipfile
+Pipfile.lock
+__pycache__/
+docker-compose.yml
+!.dockerignore
+!.gitignore

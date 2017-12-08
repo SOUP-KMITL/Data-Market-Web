@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    web-service:
+        image: worker-01:5000/web-service
+        build: .
+        volumes:
+            - .:/code
+        # networks:
+        #     - default
+
+# networks:
+#   default:
+#     external:
+#         name: ticketing_default
