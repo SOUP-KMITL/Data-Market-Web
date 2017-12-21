@@ -1,7 +1,6 @@
 # Example configuration
 class DefaultConfig(object):
     DEBUG = True
-    #  SERVER_NAME = "webservice:5000"
 
 
 API_VER    = 1
@@ -13,11 +12,15 @@ EXT_API_GATEWAY = "http://203.154.59.55:" + str(EXT_API_PORT) + "/api/v1"
 #  Production (public server) configuration
 #  API_PREFIX     = "/web"
 #  COLLECTION_API = "http://collection-service:" + str(EXT_API_PORT) + "/api/v1/collections"
-#  LOGIN_API      = "http://user-service:" + str(EXT_API_PORT) + "/api/v1/users/login"
+#  USER_API       = "http://user-service:" + str(EXT_API_PORT) + "/api/v1/users"
+#  LOGIN_API      = USER_API + "/login"
+#  METER_API      = "http://meter-service:" + str(EXT_API_PORT) + "/api/v1/meters"
 
 #  Development (local) configuration
 API_PREFIX     = "/api/v" + str(API_VER) + "/web"
 COLLECTION_API = EXT_API_GATEWAY + "/collections"
-LOGIN_API      = EXT_API_GATEWAY + "/users/login"
+USER_API       = EXT_API_GATEWAY + "/users"
+LOGIN_API      = USER_API + "/login"
+METER_API      = EXT_API_GATEWAY + "/meters"
 
 SECRET = "some secret"
