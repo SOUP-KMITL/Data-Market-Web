@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import requests
 import json
 import jwt
@@ -8,6 +9,7 @@ import appconfig
 
 app = Flask(__name__)
 app.config.from_object("appconfig.DefaultConfig")
+CORS(app)
 
 temp_data = json.load(open('service.json'))
 
