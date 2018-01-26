@@ -1,58 +1,49 @@
 [
     {
         "serviceId": "323ac1e602495e0eaca7f7596d72c4b8106c0a1d461ddb9f28a92462c601a3cc",
-        "serviceName": "sentimental-prediction",
+        "serviceName": "Sentimental Prediction",
+        "description": "Approximate the average emotion of people located in an area by means of location-based content on social networks.",
+        "icon": "https://screenshotscdn.firefoxusercontent.com/images/819fa6de-0a20-4ff5-aeed-9bd26769a1fa.png",
         "endPoint": "local:52af737c405c5856761fa046706c60155b94c069cae509590d34f0226c15316b",
         "type": "a",
         "owner": "user-analysis-admin01",
-        "example": {
-            "predicted": {
-                "id": "9b86786f-6779-4485-ae4f-550c6966c646",
-                "predicted": [
-                    {
-                        "acceptance": "0.00",
-                        "anger": "0.00",
-                        "anticipation": "0.00",
-                        "disgust": "0.00",
-                        "fear": 100.0,
-                        "joy": "99.00",
-                        "latitude": 13.7667822925,
-                        "longitude": 100.642380684,
-                        "max_emo": 3,
-                        "name": "The Mall Bangkapi (\u0e40\u0e14\u0e2d\u0e30\u0e21\u0e2d\u0e25\u0e25\u0e4c \u0e1a\u0e32\u0e07\u0e01\u0e30\u0e1b\u0e34)",
-                        "name_id": "themallbangkapi",
-                        "place_id": "f9a5e9e2-1287-4b51-872c-76a8df41bcc8",
-                        "predicted_texts": [],
-                        "sadness": "0.00",
-                        "surprise": "0.00",
-                        "zone": "none"
-                    }
-                ]
-            }
-        },
+        "example": {},
         "timestamp": 1510838183248,
         "open": true
     },
     {
         "serviceId": "bcf34d05afd5c6f919a88f43e2cf5542fc44d56491375cea0f6c53f7caed9e4e",
-        "serviceName": "crowdflow-prediction",
+        "serviceName": "Crowdflow Prediction",
+        "description": "Approximate the density of people in an area, and make a prediction of where these crowd will flow to at a given time",
+        "icon": "https://screenshotscdn.firefoxusercontent.com/images/b34527b3-0174-4e07-9f7d-c3b37bec1cd3.png",
         "endPoint": "http://122.155.209.146:5050/crowdflow/density?time=NOW&ll=13.746603736317631,100.53954639826303",
         "type": "a",
         "owner": "user-analysis-admin01",
-        "example": {
-            "density": [
-                {
-                    "date": "2017-12-04",
-                    "density": "LOW",
-                    "place": {
-                        "lat": 13.746603736317631,
-                        "lng": 100.53954639826303,
-                        "name": "CentralWorld (\u0e40\u0e0b\u0e47\u0e19\u0e17\u0e23\u0e31\u0e25\u0e40\u0e27\u0e34\u0e25\u0e14\u0e4c)"
-                    },
-                    "time": "23:18"
-                }
-            ]
-        },
+        "example": {},
+        "timestamp": 1510838183248,
+        "open": true
+    },
+    {
+        "serviceId": "1",
+        "serviceName": "Trusted Source Certificate Authority",
+        "description": "The trusted source certificate authority API is provided to any users (client) who want to generates their own digital certificates to vouch their digital identity.",
+        "icon": "https://screenshotscdn.firefoxusercontent.com/images/988ba743-ded8-4d7f-945c-4f4d77939851.png",
+        "endPoint": "",
+        "type": "a",
+        "owner": "Donus",
+        "example": {},
+        "timestamp": 1510838183248,
+        "open": true
+    },
+    {
+        "serviceId": "2",
+        "serviceName": "Traffic Density",
+        "description": "Approximate traffic density of a given area",
+        "icon": "https://screenshotscdn.firefoxusercontent.com/images/dc0b1932-dda5-49aa-9aee-49503753fed7.png",
+        "endPoint": "",
+        "type": "a",
+        "owner": "Donus",
+        "example": {},
         "timestamp": 1510838183248,
         "open": true
     }
